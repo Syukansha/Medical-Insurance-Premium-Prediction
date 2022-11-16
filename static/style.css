@@ -1,0 +1,89 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./bg3.jpg);
+}
+.title{
+    margin: auto;
+    margin-top: 5%;
+    width: 35%;
+    padding: 10px;
+    text-align: center;
+    border: solid #03befc;
+    border-radius: 15px;
+    background-color: #03befc;
+    color: white;
+}
+.title2{
+    margin: auto;
+    margin-top: 5%;
+    width: 35%;
+    padding: 10px;
+    text-align: center;
+    border: solid #03befc;
+    border-radius: 15px;
+    background-color: #03befc;
+    color: white;
+}
+.tb-pred{
+    background-color: #03befc;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 5%;
+    margin-top: 10%;
+    margin-left: 10%;
+    float: left;
+}
+.test{
+    background-color: #03befc;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 5%;
+    float: right;
+}
+.result{
+    margin: auto;
+    margin-top: 5%;
+    width: 15%;
+    padding: 10px;
+    text-align: center;
+    border: solid #03befc;
+    border-radius: 15px;
+    background-color: white;
+    color: #03befc;
+}
+img{
+    width: 70%;
+}
+.graph-pred{
+    
+    margin-top: 10%;
+    margin-left: 40%;
+}
+.submit-btn{
+    background-color: rgb(5, 199, 5);
+    color: white;
+    border-color: rgb(5, 199, 5);
+    border-radius: 8px;
+    padding: 5px;
+}
+.result-pred{
+    
+    margin-top: 10%;
+    
+}
+.tb-pred2{
+    background-color: #03befc;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 4%;
+    margin-left: 40%;
+   
+}
+.reset-btn{
+    width: 15%;
+    padding: 8px;
+    border-radius: 15px;
+    background-color: #fc0303;
+    color: white;
+}
+

@@ -1,0 +1,115 @@
+<html>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <h1 class='title'>Medical Insurance Prediction Using Random Forest</h1>
+    <body class="pred">
+        <form action="" method="POST" class="inputPrediction">
+
+            <table class="tb-pred">
+                <tr>
+                    <td>Age </td>
+                    <td>: <input type="text" name='age'  required><br></td>
+                </tr>
+                <tr>
+                    <td>Diabetes </td>
+                    <td>: <input type="radio" name='diabetes' value="1" required>Yes &nbsp&nbsp <input type="radio" name='diabetes' value="0" required>No</td>
+                </tr>
+                <tr>
+                    <td>Blood Pressure Problems </td>
+                    <td>: <input type="radio" name='bloodpressure' value="1" required/>Yes &nbsp&nbsp <input type="radio" name='bloodpressure' value="0" required/>No</td>
+                </tr>
+                <tr>
+                    <td>Any Transplants </td>
+                    <td>: <input type="radio" name='transplant' value="1" required/>Yes &nbsp&nbsp <input type="radio" name='transplant' value="0" required/>No</td>
+                </tr>
+                <tr>
+                    <td>Any Chronic Diseases </td>
+                    <td>: <input type="radio" name='chronic' value="1" required/>Yes &nbsp&nbsp <input type="radio" name='chronic' value="0" required/>No</td>
+                </tr>
+                <tr>
+                    <td>Height </td>
+                    <td>: <input type="text" name='height' required/></td>
+                </tr>
+                <tr>
+                    <td>Weight </td>
+                    <td>: <input type="text" name='weight' required/></td>
+                </tr>
+                <tr>
+                    <td>Known Allergies </td>
+                    <td>: <input type="radio" name='allergies' value="1" required/>Yes &nbsp&nbsp <input type="radio" name='allergies' value="0" required/>No</td>
+                </tr>
+                <tr>
+                    <td>History Of Cancer In Family </td>
+                    <td>: <input type="radio" name='historyOfcancer' value="1" required/>Yes &nbsp&nbsp <input type="radio" name='historyOfcancer' value="0" required/>No</td>
+                </tr>
+                <tr>
+                    <td>Number Of Major Surgeries </td>
+                    <td>: <input type="text" name='surgeries' required/></td>
+                </tr>
+                <tr>
+                    <td><input type='submit' value='Predict' class="submit-btn"  />&nbsp;<a href="http://127.0.0.1:5001/" class="reset-btn">Reset</a></td>
+                
+                </tr>
+               
+            </table>    
+           
+        </form>
+        
+        <div class="graph-pred">
+            <img src="{{ url_for('static', filename='Figure_1.png') }}"/>
+        </div>
+        <div class="result-pred">
+            <h1 class="title2">Prediction </h1>
+            <h2 class="result">INR {{data}}</h2>
+            <table class="tb-pred2">
+                <tr>
+                    <td><h3>Details <br> </h3></td>
+                </tr>
+                <tr>
+                    <td>Age </td>
+                    <td>: {{data1}}</td>
+                </tr>
+                <tr>
+                    <td>Diabetes </td>
+                    <td>: {{data2}}</td>
+                </tr>
+                <tr>
+                    <td>Blood Pressure Problems </td>
+                    <td>: {{data3}}</td>
+                </tr>
+                <tr>
+                    <td>Any Transplants </td>
+                    <td>: {{data4}}</td>
+                </tr>
+                <tr>
+                    <td>Any Chronic Diseases </td>
+                    <td>: {{data5}}</td>
+                </tr>
+                <tr>
+                    <td>Height </td>
+                    <td>: {{data6}}</td>
+                </tr>
+                <tr>
+                    <td>Weight </td>
+                    <td>: {{data7}}</td>
+                </tr>
+                <tr>
+                    <td>Known Allergies </td>
+                    <td>: {{data8}}</td>
+                </tr>
+                <tr>
+                    <td>History Of Cancer In Family </td>
+                    <td>: {{data9}}</td>
+                </tr>
+                <tr>
+                    <td>Number Of Major Surgeries </td>
+                    <td>: {{data10}}</td>
+                </tr>
+
+            
+            </table>
+
+        </div>
+    </body>
+</html>
+
+
